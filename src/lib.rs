@@ -62,8 +62,8 @@
 
 use core::cmp::Ordering;
 
-include!(env!("TYPENUM_BUILD_OP"));
-include!(env!("TYPENUM_BUILD_CONSTS"));
+include!(concat!(env!("OUT_DIR"), "/consts.rs"));
+include!(concat!(env!("OUT_DIR"), "/op.rs"));
 
 pub mod bit;
 pub mod int;
